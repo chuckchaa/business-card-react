@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    margin: 0;
+    background-color: #23252C;
+    font-family: Inter, sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+
+.card {
+    background-color: #1A1B21;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 317px;
+    margin: 30px;
+}
+
+.info__img {
+    min-height: 317px;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.info__name {
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 21px 0 6px;
+}
+
+.info__role {
+    font-size: 12.8px;
+    line-height: 15px;
+    text-align: center;
+    margin-bottom: 8px;
+    color: #F3BF99;
+    font-weight: 400;
+}
+
+.info__website {
+    text-align: center;
+    font-size: 10.24px;
+    line-height: 150%;
+    color: #F5F5F5;
+    margin-bottom: 14px;
+    font-weight: 400;
+}
+
+.button {
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    padding: 9px 13px;
+    text-align: center;
+    display: block;
+    max-width: 100%;
+    margin: 0 35px 35px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background .25s ease-out;
+}
+
+.button span {
+    color: #374151;
+    font-weight: 500;
+    line-height: 1.14;
+    margin-left: 8px;
+    transition: color .25s ease-out;
+}
+
+.button svg {
+    width: 16px;
+    height: 16px;
+}
+
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.button:hover span {
+    color: black;
+}
+
+.about {
+    margin: 0 35px;
+}
+
+.about:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.about__title {
+    color: #F5F5F5;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 5px;
+}
+
+.about__text {
+    color: #DCDCDC;
+    font-weight: 400;
+    font-size: 10.24px;
+    line-height: 150%;
+}
+
+.card__footer {
+    background-color: #161619;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 20px 0;
+    margin-top: 24px;
+}
+
+.social__icons-icon svg {
+    width: 25px;
+    height: 25px;
+}
+
+.social__icons-icon path {
+    transition: fill .25s ease-out;
+}
+
+.social__icons-icon:hover path {
+    fill: white;
+}
